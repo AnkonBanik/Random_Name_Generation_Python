@@ -1,0 +1,14 @@
+# This script generates 4100 fake names and saves them to an Excel file.
+# It uses the Faker library to create realistic names and pandas to handle the DataFrame and save it to an Excel file.
+# Ensure you have the Faker and pandas libraries installed in your Python environment.  
+
+from faker import Faker  #Import Faker for generating fake data
+import pandas as pd  #Import pandas for data manipulation
+
+fake = Faker()  # Initialize Faker instance
+names = [fake.name() for _ in range(4100)]  # Generate 4100 fake names
+df = pd.DataFrame(names, columns=["Full Name"]) # Create a DataFrame with the fake names
+df.to_excel("fake_names.xlsx", index=False) # Save the DataFrame to an Excel file without the index
+
+
+print("Task Complete.") #Confirm completion of the task
