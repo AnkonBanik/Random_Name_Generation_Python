@@ -1,4 +1,4 @@
-# Fake_Name_Generation_Python
+# Random_Name_Generation_Python
 
 **Purpose**
 This script creates a dataset of 4,100 fake English names (first + last names) to anonymize confidential information in data files. It helps in:
